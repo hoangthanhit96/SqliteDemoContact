@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/ivDetailLogo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_cover.height"
+        android:scaleType="centerCrop"
+        android:background="@drawable/anh" />
+
+    <TextView
+        android:id="@+id/tvDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivDetailLogo"
+        android:layout_alignLeft="@+id/ivDetailLogo"
+        android:padding="@dimen/detail_cover.padding"
+        android:text="Nothing"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/detail_text_size.large"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ivDetailLogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/info1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/detail_text.padding"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/detail_text.padding"
+                        android:text="@string/detail_phone"
+                        android:textSize="@dimen/detail_text_size.normal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDetailPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/detail_text.padding"
+                        android:text="Nothing"
+                        android:textSize="@dimen/detail_text_size.normal" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivDetailCall"
+                    android:layout_width="@dimen/detail_ic.size"
+                    android:layout_height="@dimen/detail_ic.size"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/icon_call" />
+
+                <ImageView
+                    android:id="@+id/ivDetailText"
+                    android:layout_width="@dimen/detail_ic.size"
+                    android:layout_height="@dimen/detail_ic.size"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/icon_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/info2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info1"
+                android:orientation="vertical"
+                android:padding="@dimen/detail_text.padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/detail_text.padding"
+                    android:text="@string/detail_address"
+                    android:textSize="@dimen/detail_text_size.normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/detail_text.padding"
+                    android:text="Nothing"
+                    android:textSize="@dimen/detail_text_size.normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/info3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info2"
+                android:orientation="vertical"
+                android:padding="@dimen/detail_text.padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/detail_text.padding"
+                    android:text="@string/detail_gender"
+                    android:textSize="@dimen/detail_text_size.normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/detail_text.padding"
+                    android:text="Nothing"
+                    android:textSize="@dimen/detail_text_size.normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/info4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info3"
+                android:orientation="vertical"
+                android:padding="@dimen/detail_text.padding">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/detail_text.padding"
+                    android:text="@string/detail_date"
+                    android:textSize="@dimen/detail_text_size.normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/detail_text.padding"
+                    android:text="Nothing"
+                    android:textSize="@dimen/detail_text_size.normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/info5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info4"
+                android:orientation="vertical"
+                android:padding="@dimen/detail_text.padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/detail_text.padding"
+                    android:text="@string/detail_time"
+                    android:textSize="@dimen/detail_text_size.normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/detail_text.padding"
+                    android:text="Nothing"
+                    android:textSize="@dimen/detail_text_size.normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
